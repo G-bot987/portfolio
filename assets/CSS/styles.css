@@ -1,10 +1,5 @@
-:root {
-    --brandcolour1: purple;
-    --brandcolour2: rgb(138, 138, 138);
-    --brandcolour3: white;
-    --brandcolour4: black;
 
-}
+title{color: var(--brandcolour4);}
 
 
 
@@ -31,9 +26,32 @@ nav a:hover {
 body {background-color: var(--brandcolour2);
 }
 
-img#G-bot987 {height: 400px;
-    width: 100%;
+#RoboPic {
+    height: 200px;
+    width: 25%;
     padding: 20px;
-    margin-top: 15px;
-    background-image: url("../img/roboflav.png");
+    margin-top: 15px;}
+    :root {
+        --brandcolour1: purple;
+        --brandcolour2: rgb(138, 138, 138);
+        --brandcolour3: white;
+        --brandcolour4: black;
+        --cardimghieght: 75px;
+        --cardimgwidth: 75px;
+    
+    }
+    
+#dice { height: var(--cardimghieght);
+    width: var(--cardimgwidth);
+        
+    }
+
+#laptop {height: var(--cardimghieght);
+    width: var(--cardimgwidth);
+
+}
+
+#puppa {height: var(--cardimghieght);
+    width: var(--cardimgwidth);
+
 }
