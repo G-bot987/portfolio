@@ -1,20 +1,39 @@
+:root {
+    --brandcolour1: purple;
+    --brandcolour2: rgb(138, 138, 138);
+    --brandcolour3: white;
+    --brandcolour4: black;
+
+}
+
+
+
 nav {
     position:fixed;
     width: 100%;
     transition: top 0.3s;
-    background-color: purple;
+    background-color: var(--brandcolour1);
 }
 
 nav a {
     float:left;
     display: block;
-    color: white;
+    color: var(--brandcolour3);
     text-align:center;
     padding: 15px;
     text-decoration: none;
 }
 
 nav a:hover {
-    background-color: black;
-    color: silver;
+    background-color: var(--brandcolour4);
+    color: var(--brandcolour2);
+}
+body {background-color: var(--brandcolour2);
+}
+
+img#G-bot987 {height: 400px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 15px;
+    background-image: url("../img/roboflav.png");
 }
