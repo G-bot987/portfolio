@@ -38,6 +38,8 @@ body {background-color: var(--brandcolour2);
         --brandcolour4: black;
         --cardimghieght: 75px;
         --cardimgwidth: 75px;
+        --hoverheight:150px ;
+        --hoverwidth: 150px;
     
     }
     
@@ -46,8 +48,17 @@ body {background-color: var(--brandcolour2);
         
     }
 
+#dice:hover {height:var(--hoverheight) ;
+width: var(--hoverwidth);
+} 
+
 #laptop {height: var(--cardimghieght);
     width: var(--cardimgwidth);
+
+}
+
+#laptop:hover {height: var(--hoverheight);
+    width: var(--hoverwidth);
 
 }
 
@@ -55,3 +66,9 @@ body {background-color: var(--brandcolour2);
     width: var(--cardimgwidth);
 
 }
+
+#puppa:hover{ height: var(--hoverheight);
+width: var(--hoverwidth);
+}
+
+
