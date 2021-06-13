@@ -1,5 +1,44 @@
+:root {
+    --brandcolour1: purple;
+    --brandcolour2: rgb(138, 138, 138);
+    --brandcolour3: white;
+    --brandcolour4: black;
+    --cardimghieght: 75px;
+    --cardimgwidth: 75px;
+    --hoverheight:150px ;
+    --hoverwidth: 150px;
+
+}
+
 
 title{color: var(--brandcolour4);}
+
+header h1 { color: var(--brandcolour3);
+    background-color: var(--brandcolour4);
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+header h1:hover {
+    color: var(--brandcolour2);
+}
+
+#profile { height: 20%;
+    width: 20%;
+    display:block;
+}
+
+#profileHead {
+    padding-top: 0%;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+
+#profile p {padding: auto;}
+
 
 
 
@@ -26,49 +65,122 @@ nav a:hover {
 body {background-color: var(--brandcolour2);
 }
 
+#PicBtn { height: 200px;
+width: 200px;
+display: block;
+align-self: center;  
+margin-left: 10%;
+margin-right: 75%;  
+}
+
 #RoboPic {
-    height: 200px;
-    width: 25%;
+    height: 75%;
+    width: 75%;
     padding: 20px;
-    margin-top: 15px;}
-    :root {
-        --brandcolour1: purple;
-        --brandcolour2: rgb(138, 138, 138);
-        --brandcolour3: white;
-        --brandcolour4: black;
-        --cardimghieght: 75px;
-        --cardimgwidth: 75px;
-        --hoverheight:150px ;
-        --hoverwidth: 150px;
+    margin-top: 15px;
+    display: block;
+}
+
+
+
+#DnD { margin: 50px;
+    height: 150px;
+    width: 50%;
+    border: 9px dashed black;
+    display: block;
+
+}
+
+#DnD:hover {
+    box-shadow: 100px 100px 100px 100px var(--brandcolour1);
+    height: 200px;
+    width: 50%;
+    border: 9px solid var(--brandcolour1);
     
-    }
+}
     
-#dice { height: var(--cardimghieght);
-    width: var(--cardimgwidth);
+#dice { display: block;
+    height: 25%;
+    width: 25%;
+    padding: auto;
+    margin: 25px;
         
     }
 
-#dice:hover {height:var(--hoverheight) ;
-width: var(--hoverwidth);
+#dice:hover {display: block;
+    height: 50%;
+width: 50%;
+padding: auto;
+margin-left: 25px;
+margin-bottom: 20%;
+padding-bottom: 15px;
 } 
 
-#laptop {height: var(--cardimghieght);
-    width: var(--cardimgwidth);
+#refracting { margin: 50px;
+    height: 150px;
+    width: 50%;
+    border: 9px dashed black;
+    display: block;
 
 }
 
-#laptop:hover {height: var(--hoverheight);
-    width: var(--hoverwidth);
+#refracting:hover {
+    box-shadow: 100px 100px 100px 100px var(--brandcolour1);
+    height: 200px;
+    width: 50%;
+    border: 9px solid var(--brandcolour1);
+    
+}
+
+#laptop {display: block;
+    height: 25%;
+    width: 25%;
+    padding: auto;
+    margin: 25px;
+}
+
+#laptop:hover {display: block;
+    height: 50%;
+width: 50%;
+padding: auto;
+margin-left: 25px;
+margin-bottom: 20%;
+}
+
+#husky { margin: 50px;
+    height: 150px;
+    width: 50%;
+    border: 9px dashed black;
+    display: block;
 
 }
 
-#puppa {height: var(--cardimghieght);
-    width: var(--cardimgwidth);
+#husky:hover {
+    box-shadow: 100px 100px 100px 100px var(--brandcolour1);
+    height: 200px;
+    width: 50%;
+    border: 9px solid var(--brandcolour1);
+    
+}
+
+#puppa { display: block;
+    height: 25%;
+    width: 25%;
+    padding: auto;
+    margin: 25px;
+    
 
 }
 
-#puppa:hover{ height: var(--hoverheight);
-width: var(--hoverwidth);
+#puppa:hover{ display: block;
+    height: 50%;
+width: 50%;
+padding: auto;
+margin-left: 25px;
+
 }
+
+
+footer {text-align: center;}
 
 
