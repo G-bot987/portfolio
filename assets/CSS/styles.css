@@ -24,20 +24,6 @@ header h1:hover {
     color: var(--brandcolour2);
 }
 
-#profile { height: 20%;
-    width: 20%;
-    display:block;
-}
-
-#profileHead {
-    padding-top: 0%;
-    text-align: center;
-    font-style: italic;
-    font-weight: bold;
-    
-}
-
-#profile p {padding: auto;}
 
 
 
@@ -65,81 +51,104 @@ nav a:hover {
 body {background-color: var(--brandcolour2);
 }
 
-#PicBtn { height: 200px;
-width: 200px;
-display: block;
+section {display:flex;
+    flex-direction: column;
+    
+}
+
+#profileHead {
+    padding-top: 0%;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+
+#profile p {margin-left: 15%;}
+
+
+#PicBtn { min-height: 200px;
+    min-width: 200px;
+display: flex;
+flex-wrap: wrap;
 align-self: center;  
 margin-left: 10%;
 margin-right: 75%;  
+flex-grow: 1;
+flex-shrink: 1;
 }
 
 #RoboPic {
-    height: 75%;
-    width: 75%;
+    min-height: 75%;
+    min-width: 75%;
     padding: 20px;
     margin-top: 15px;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
+
 
 
 
 #DnD { margin: 50px;
-    height: 150px;
-    width: 50%;
+    min-height: 150px;
+    min-width: 50%;
     border: 9px dashed black;
-    display: block;
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 #DnD:hover {
     box-shadow: 100px 100px 100px 100px var(--brandcolour1);
-    height: 200px;
-    width: 50%;
     border: 9px solid var(--brandcolour1);
     
 }
-    
-#dice { display: block;
+
+#dice {display: flex;
     height: 25%;
     width: 25%;
     padding: auto;
     margin: 25px;
-        
-    }
+}
 
-#dice:hover {display: block;
+#dice:hover {display: flex;
     height: 50%;
 width: 50%;
 padding: auto;
 margin-left: 25px;
 margin-bottom: 20%;
-padding-bottom: 15px;
-} 
+}
+
+
 
 #refracting { margin: 50px;
-    height: 150px;
-    width: 50%;
+    min-height: 150px;
+    min-width: 50%;
     border: 9px dashed black;
-    display: block;
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 #refracting:hover {
     box-shadow: 100px 100px 100px 100px var(--brandcolour1);
-    height: 200px;
-    width: 50%;
     border: 9px solid var(--brandcolour1);
     
 }
 
-#laptop {display: block;
+#laptop {display: flex;
     height: 25%;
     width: 25%;
     padding: auto;
     margin: 25px;
 }
 
-#laptop:hover {display: block;
+#laptop:hover {display: flex;
     height: 50%;
 width: 50%;
 padding: auto;
@@ -148,36 +157,35 @@ margin-bottom: 20%;
 }
 
 #husky { margin: 50px;
-    height: 150px;
-    width: 50%;
+    min-height: 150px;
+    min-width: 50%;
     border: 9px dashed black;
-    display: block;
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 #husky:hover {
     box-shadow: 100px 100px 100px 100px var(--brandcolour1);
-    height: 200px;
-    width: 50%;
     border: 9px solid var(--brandcolour1);
     
 }
 
-#puppa { display: block;
+#puppa {display: flex;
     height: 25%;
     width: 25%;
     padding: auto;
     margin: 25px;
-    
-
+    margin-bottom: 5%;
 }
 
-#puppa:hover{ display: block;
+#puppa:hover {display: flex;
     height: 50%;
 width: 50%;
 padding: auto;
 margin-left: 25px;
-
+margin-bottom: 20%;
 }
 
 
