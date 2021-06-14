@@ -64,7 +64,11 @@ section {display:flex;
     
 }
 
-#profile p {margin-left: 15%;}
+#profile p {margin-left: 15%;
+padding: 200px;
+display: flex;
+flex-wrap: wrap;
+}
 
 
 #PicBtn { min-height: 200px;
@@ -107,21 +111,19 @@ flex-shrink: 1;
     border: 9px solid var(--brandcolour1);
     
 }
-
-#dice {display: flex;
+    
+#dice { display: flex;
     height: 25%;
     width: 25%;
-    padding: auto;
-    margin: 25px;
-}
+    padding: auto;     
+    }
 
 #dice:hover {display: flex;
     height: 50%;
 width: 50%;
 padding: auto;
-margin-left: 25px;
-margin-bottom: 20%;
-}
+
+} 
 
 
 
@@ -191,4 +193,9 @@ margin-bottom: 20%;
 
 footer {text-align: center;}
 
+
+@media only screen and (max-width:580px) {
+  #PicBtn {display: none;
+    }  
+} 
 
