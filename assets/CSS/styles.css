@@ -5,15 +5,45 @@
     --brandcolour4: black;
     --cardimghieght: 75px;
     --cardimgwidth: 75px;
-    --hoverheight:150px ;
+    --hoverheight: 150px;
     --hoverwidth: 150px;
-
+    --flexer: flex;
+    --grow: 1;
+    --shrink: 1;
+    --wrapper: wrap;
+    --projectmargin: 50px;
+    --projectminhieght: 150px;
+    --projectminwidth: 50%;
+    --projectborder: 9px dashed var(--brandcolour4);
+    --projectshadow: 100px 100px 100px 100px var(--brandcolour1);
+    --projectborderchange: 9px solid var(--brandcolour1);
+    --ProjectImgHieghtWidth: 25%;
+    --projectImgpadding: auto;
+    --projectImgMargin: 25px;
+    --projectImgHieghtWithHover: 50%;
+    --font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+h1 {
+    font-size: 24px;
+    ;
+    font-style: italic;
+    font-weight: bold;
+    font-family: var(--font)
+}
 
-title{color: var(--brandcolour4);}
+p {
+    font-size: 14px;
+    font-family: var(--font);
+    font-style: italic;
+}
 
-header h1 { color: var(--brandcolour3);
+title {
+    color: var(--brandcolour4);
+}
+
+header h1 {
+    color: var(--brandcolour3);
     background-color: var(--brandcolour4);
     font-style: italic;
     font-weight: bold;
@@ -24,22 +54,18 @@ header h1:hover {
     color: var(--brandcolour2);
 }
 
-
-
-
-
 nav {
-    position:fixed;
+    position: fixed;
     width: 100%;
     transition: top 0.3s;
     background-color: var(--brandcolour1);
 }
 
 nav a {
-    float:left;
+    float: left;
     display: block;
     color: var(--brandcolour3);
-    text-align:center;
+    text-align: center;
     padding: 15px;
     text-decoration: none;
 }
@@ -48,38 +74,38 @@ nav a:hover {
     background-color: var(--brandcolour4);
     color: var(--brandcolour2);
 }
-body {background-color: var(--brandcolour2);
+
+body {
+    background-color: var(--brandcolour2);
 }
 
-section {display:flex;
+section {
+    display: var(--flexer);
     flex-direction: column;
-    
 }
 
 #profileHead {
     padding-top: 0%;
     text-align: center;
-    font-style: italic;
-    font-weight: bold;
-    
 }
 
-#profile p {margin-left: 15%;
-padding: 200px;
-display: flex;
-flex-wrap: wrap;
+#profile p {
+    margin-left: 15%;
+    padding: 200px;
+    display: var(--flexer);
+    flex-wrap: var(--wrapper);
 }
 
-
-#PicBtn { min-height: 200px;
-    min-width: 200px;
-display: flex;
-flex-wrap: wrap;
-align-self: center;  
-margin-left: 10%;
-margin-right: 75%;  
-flex-grow: 1;
-flex-shrink: 1;
+#PicBtn {
+    min-height: 100px;
+    min-width: 100px;
+    display: var(--flexer);
+    flex-wrap: var(--wrapper);
+    align-self: center;
+    margin-left: 10%;
+    margin-right: 75%;
+    flex-grow: var(--grow);
+    flex-shrink: var(--shrink);
 }
 
 #RoboPic {
@@ -87,115 +113,117 @@ flex-shrink: 1;
     min-width: 75%;
     padding: 20px;
     margin-top: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-shrink: 1;
+    display: var(--flexer);
+    flex-wrap: var(--wrapper);
+    flex-grow: var(--grow);
+    flex-shrink: var(--shrink);
 }
 
-
-
-
-#DnD { margin: 50px;
-    min-height: 150px;
-    min-width: 50%;
-    border: 9px dashed black;
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-shrink: 1;
+#DnD {
+    margin: var(--projectmargin);
+    min-height: var(--projectminhieght);
+    min-width: var(--projectminwidth);
+    border: var(--projectborder);
+    display: var(--flexer);
+    flex-wrap: var(--wrapper);
+    flex-grow: var(--grow);
+    flex-shrink: var(--shrink);
 }
 
 #DnD:hover {
-    box-shadow: 100px 100px 100px 100px var(--brandcolour1);
-    border: 9px solid var(--brandcolour1);
-    
+    box-shadow: var(--projectshadow);
+    border: var(--projectborderchange)
 }
-    
-#dice { display: flex;
-    height: 25%;
-    width: 25%;
-    padding: auto;     
-    }
 
-#dice:hover {display: flex;
-    height: 50%;
-width: 50%;
-padding: auto;
+#dice {
+    display: var(--flexer);
+    height: var(--ProjectImgHieghtWidth);
+    width: var(--ProjectImgHieghtWidth);
+    padding: var(--projectImgpadding);
+    margin: var(--projectImgMargin);
+}
 
-} 
+#dice:hover {
+    display: var(--flexer);
+    height: var(--projectImgHieghtWithHover);
+    width: var(--projectImgHieghtWithHover);
+    padding: var(--projectImgpadding);
+    margin: var(--projectImgMargin);
+}
 
-
-
-#refracting { margin: 50px;
-    min-height: 150px;
-    min-width: 50%;
-    border: 9px dashed black;
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-shrink: 1;
+#refracting {
+    margin: var(--projectmargin);
+    min-height: var(--projectminhieght);
+    min-width: var(--projectminwidth);
+    border: var(--projectborder);
+    display: var(--flexer);
+    flex-wrap: var(--wrapper);
+    flex-grow: var(--grow);
+    flex-shrink: var(--shrink);
 }
 
 #refracting:hover {
-    box-shadow: 100px 100px 100px 100px var(--brandcolour1);
-    border: 9px solid var(--brandcolour1);
-    
+    box-shadow: var(--projectshadow);
+    border: var(--projectborderchange)
 }
 
-#laptop {display: flex;
-    height: 25%;
-    width: 25%;
-    padding: auto;
-    margin: 25px;
+#laptop {
+    display: var(--flexer);
+    height: var(--ProjectImgHieghtWidth);
+    width: var(--ProjectImgHieghtWidth);
+    padding: var(--projectImgpadding);
+    margin: var(--projectImgMargin);
 }
 
-#laptop:hover {display: flex;
-    height: 50%;
-width: 50%;
-padding: auto;
-margin-left: 25px;
-margin-bottom: 20%;
+#laptop:hover {
+    display: var(--flexer);
+    height: var(--projectImgHieghtWithHover);
+    width: var(--projectImgHieghtWithHover);
+    padding: var(--projectImgpadding);
+    margin: var(--projectImgMargin);
 }
 
-#husky { margin: 50px;
-    min-height: 150px;
-    min-width: 50%;
-    border: 9px dashed black;
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-shrink: 1;
+#husky {
+    margin: var(--projectmargin);
+    min-height: var(--projectminhieght);
+    min-width: var(--projectminwidth);
+    border: var(--projectborder);
+    display: var(--flexer);
+    flex-wrap: var(--wrapper);
+    flex-grow: var(--grow);
+    flex-shrink: var(--shrink);
 }
 
 #husky:hover {
-    box-shadow: 100px 100px 100px 100px var(--brandcolour1);
-    border: 9px solid var(--brandcolour1);
-    
+    box-shadow: var(--projectshadow);
+    border: var(--projectborderchange)
 }
 
-#puppa {display: flex;
-    height: 25%;
-    width: 25%;
-    padding: auto;
-    margin: 25px;
-    margin-bottom: 5%;
+#puppa {
+    display: var(--flexer);
+    height: var(--ProjectImgHieghtWidth);
+    width: var(--ProjectImgHieghtWidth);
+    padding: var(--projectImgpadding);
+    margin: var(--projectImgMargin);
 }
 
-#puppa:hover {display: flex;
-    height: 50%;
-width: 50%;
-padding: auto;
-margin-left: 25px;
-margin-bottom: 20%;
+#puppa:hover {
+    display: var(--flexer);
+    height: var(--projectImgHieghtWithHover);
+    width: var(--projectImgHieghtWithHover);
+    padding: var(--projectImgpadding);
+    margin: var(--projectImgMargin);
 }
 
-
-footer {text-align: center;}
-
+footer {
+    text-align: center;
+}
 
 @media only screen and (max-width:580px) {
-  #PicBtn {display: none;
-    }  
-} 
-
+    #PicBtn {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+}
