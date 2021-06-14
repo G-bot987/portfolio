@@ -20,7 +20,9 @@
     --font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --ImgFloat: left;
     --ImgMarginRight: 15%;
+    --boxGlow: glow 1s ease-in-out infinite alternate;
 }
+
 
 h1 {
     font-size: 24px;
@@ -139,7 +141,8 @@ section {
 
 #DnD:hover {
     box-shadow: var(--projectshadow);
-    border: var(--projectborderchange)
+    border: var(--projectborderchange);
+    animation: var(--boxGlow);
 }
 
 #dice {
@@ -150,6 +153,7 @@ section {
     margin: var(--projectImgMargin);
     float: var(--ImgFloat);
     margin-right: var(--ImgMarginRight);
+    margin-bottom: 3%;
 }
 
 #dice:hover {
@@ -176,7 +180,8 @@ section {
 
 #refracting:hover {
     box-shadow: var(--projectshadow);
-    border: var(--projectborderchange)
+    border: var(--projectborderchange);
+    animation: var(--boxGlow);
 }
 
 #laptop {
@@ -213,19 +218,20 @@ section {
 
 #husky:hover {
     box-shadow: var(--projectshadow);
-    border: var(--projectborderchange)
+    border: var(--projectborderchange);
+    animation: var(--boxGlow);
 }
 
 #puppa {
     display: var(--flexer);
     height: var(--ProjectImgHieghtWidth);
     width: var(--ProjectImgHieghtWidth);
-    padding: var(--projectImgpadding);
-    margin-bottom: 50px;
     float: var(--ImgFloat);
+    margin: var(--projectImgMargin);
+    padding: var(--projectImgpadding);
     margin-right: var(--ImgMarginRight);
     margin-bottom: 20%;
-   
+    
 }
 
 #puppa:hover {
@@ -234,7 +240,6 @@ section {
     width: var(--projectImgHieghtWithHover);
     padding: var(--projectImgpadding);
     margin: var(--projectImgMargin);
-    margin-bottom: 50px;
     float: var(--ImgFloat);
     margin-right: var(--ImgMarginRight);
     margin-bottom: 20%;
@@ -242,6 +247,18 @@ section {
 
 footer {
     text-align: center;
+}
+
+@-webkit-keyframes glow {
+    from {
+        box-shadow: 0 0 10px #fff, 0 0 30px var(--brandcolour1), 0 0 40px var(--brandcolour1), 
+        0 0 50px var(--brandcolour1), 0 0 60px var(--brandcolour1), 0 0 70px var(--brandcolour1); 
+    }
+
+    to {
+        box-shadow: 0 0 20px #fff, 0 0 30px var(--brandcolour4), 0 0 40px var(--brandcolour4),
+        0 0 50px var(--brandcolour4), 0 0 60px var(--brandcolour4), 0 0 70px var(--brandcolour4);
+    }
 }
 
 @media only screen and (max-width:580px) {
