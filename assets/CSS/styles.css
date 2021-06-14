@@ -38,12 +38,6 @@ p {
     font-style: italic;
 }
 
-.paraBox {
-    float: right;
-    position: relative;
-    left: 45%;
-    bottom: 100px;
-}
 
 title {
     color: var(--brandcolour4);
@@ -103,40 +97,32 @@ section {
     flex-wrap: var(--wrapper);
 }
 
-#PicBtn {
-    min-height: 100px;
-    min-width: 100px;
-    display: var(--flexer);
-    flex-wrap: var(--wrapper);
-    align-self: center;
-    margin-left: 10%;
-    margin-right: 75%;
-    flex-grow: var(--grow);
-    flex-shrink: var(--shrink);
+#PicBtn:hover{
+    animation: var(--boxGlow);
 }
 
 #RoboPic {
-    min-height: 75%;
-    min-width: 75%;
-    padding: 20px;
-    margin-top: 15px;
+    margin: var(--projectmargin);
+    border: var(--projectborder);
     display: var(--flexer);
-    flex-wrap: var(--wrapper);
-    flex-grow: var(--grow);
-    flex-shrink: var(--shrink);
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+#gBtn {
+    display: flex;
+    justify-content: center;
 }
 
 
 
-#DnD {
+#DnD, #refracting, #husky {
     margin: var(--projectmargin);
-    min-height: var(--projectminhieght);
-    min-width: var(--projectminwidth);
     border: var(--projectborder);
     display: var(--flexer);
-    flex-wrap: var(--wrapper);
-    flex-grow: var(--grow);
-    flex-shrink: var(--shrink);
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
 }
 
 #DnD:hover {
@@ -167,16 +153,6 @@ section {
     margin-bottom: 20%;
 }
 
-#refracting {
-    margin: var(--projectmargin);
-    min-height: var(--projectminhieght);
-    min-width: var(--projectminwidth);
-    border: var(--projectborder);
-    display: var(--flexer);
-    flex-wrap: var(--wrapper);
-    flex-grow: var(--grow);
-    flex-shrink: var(--shrink);
-}
 
 #refracting:hover {
     box-shadow: var(--projectshadow);
@@ -203,17 +179,6 @@ section {
     float: var(--ImgFloat);
     margin-right: var(--ImgMarginRight);
     margin-bottom: 20%;
-}
-
-#husky {
-    margin: var(--projectmargin);
-    min-height: var(--projectminhieght);
-    min-width: var(--projectminwidth);
-    border: var(--projectborder);
-    display: var(--flexer);
-    flex-wrap: var(--wrapper);
-    flex-grow: var(--grow);
-    flex-shrink: var(--shrink);
 }
 
 #husky:hover {
@@ -262,10 +227,10 @@ footer {
 }
 
 @media only screen and (max-width:580px) {
-    #PicBtn {
-        display: none;
-    }
     nav {
         display: none;
+    }
+    #husky, #DnD, #refracting{
+        flex-direction: column;
     }
 }
