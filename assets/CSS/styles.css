@@ -36,6 +36,8 @@ p {
     font-size: 14px;
     font-family: var(--font);
     font-style: italic;
+    margin-top: 45px;
+
 }
 
 title {
@@ -204,7 +206,8 @@ section {
     height: var(--ProjectImgHieghtWidth);
     width: var(--ProjectImgHieghtWidth);
     padding: var(--projectImgpadding);
-    margin: var(--projectImgMargin);
+    margin-bottom: 50px;
+   
 }
 
 #puppa:hover {
@@ -213,6 +216,7 @@ section {
     width: var(--projectImgHieghtWithHover);
     padding: var(--projectImgpadding);
     margin: var(--projectImgMargin);
+    margin-bottom: 50px;
 }
 
 footer {
