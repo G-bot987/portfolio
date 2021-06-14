@@ -3,25 +3,23 @@
     --brandcolour2: rgb(138, 138, 138);
     --brandcolour3: white;
     --brandcolour4: black;
-    --cardimghieght: 75px;
-    --cardimgwidth: 75px;
-    --hoverheight: 150px;
-    --hoverwidth: 150px;
     --flexer: flex;
     --grow: 1;
     --shrink: 1;
     --wrapper: wrap;
     --projectmargin: 50px;
-    --projectminhieght: 150px;
-    --projectminwidth: 50%;
+    --projectminhieght: 75%;
+    --projectminwidth: 75%;
     --projectborder: 9px dashed var(--brandcolour4);
     --projectshadow: 100px 100px 100px 100px var(--brandcolour1);
     --projectborderchange: 9px solid var(--brandcolour1);
-    --ProjectImgHieghtWidth: 25%;
+    --ProjectImgHieghtWidth: 17.5%;
     --projectImgpadding: auto;
     --projectImgMargin: 25px;
-    --projectImgHieghtWithHover: 50%;
+    --projectImgHieghtWithHover: 30%;
     --font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --ImgFloat: left;
+    --ImgMarginRight: 15%;
 }
 
 h1 {
@@ -36,8 +34,13 @@ p {
     font-size: 14px;
     font-family: var(--font);
     font-style: italic;
-    margin-top: 45px;
+}
 
+.paraBox {
+    float: right;
+    position: relative;
+    left: 45%;
+    bottom: 100px;
 }
 
 title {
@@ -121,6 +124,8 @@ section {
     flex-shrink: var(--shrink);
 }
 
+
+
 #DnD {
     margin: var(--projectmargin);
     min-height: var(--projectminhieght);
@@ -143,6 +148,8 @@ section {
     width: var(--ProjectImgHieghtWidth);
     padding: var(--projectImgpadding);
     margin: var(--projectImgMargin);
+    float: var(--ImgFloat);
+    margin-right: var(--ImgMarginRight);
 }
 
 #dice:hover {
@@ -151,6 +158,9 @@ section {
     width: var(--projectImgHieghtWithHover);
     padding: var(--projectImgpadding);
     margin: var(--projectImgMargin);
+    float: var(--ImgFloat);
+    margin-right: var(--ImgMarginRight);
+    margin-bottom: 20%;
 }
 
 #refracting {
@@ -175,6 +185,8 @@ section {
     width: var(--ProjectImgHieghtWidth);
     padding: var(--projectImgpadding);
     margin: var(--projectImgMargin);
+    float: var(--ImgFloat);
+    margin-right: var(--ImgMarginRight)
 }
 
 #laptop:hover {
@@ -183,6 +195,9 @@ section {
     width: var(--projectImgHieghtWithHover);
     padding: var(--projectImgpadding);
     margin: var(--projectImgMargin);
+    float: var(--ImgFloat);
+    margin-right: var(--ImgMarginRight);
+    margin-bottom: 20%;
 }
 
 #husky {
@@ -207,6 +222,9 @@ section {
     width: var(--ProjectImgHieghtWidth);
     padding: var(--projectImgpadding);
     margin-bottom: 50px;
+    float: var(--ImgFloat);
+    margin-right: var(--ImgMarginRight);
+    margin-bottom: 20%;
    
 }
 
@@ -217,6 +235,9 @@ section {
     padding: var(--projectImgpadding);
     margin: var(--projectImgMargin);
     margin-bottom: 50px;
+    float: var(--ImgFloat);
+    margin-right: var(--ImgMarginRight);
+    margin-bottom: 20%;
 }
 
 footer {
