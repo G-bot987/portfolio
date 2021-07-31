@@ -10,13 +10,13 @@
     --projectmargin: 50px;
     --projectminhieght: 75%;
     --projectminwidth: 75%;
-    --projectborder: 9px dashed var(--brandcolour4);
+    --projectborder: 3px dashed var(--brandcolour4);
     --projectshadow: 100px 100px 100px 100px var(--brandcolour1);
-    --projectborderchange: 9px solid var(--brandcolour1);
-    --ProjectImgHieghtWidth: 17.5%;
+    --projectborderchange: 5px solid var(--brandcolour1);
+    --ProjectImgHieghtWidth: 150px;
     --projectImgpadding: auto;
     --projectImgMargin: 25px;
-    --projectImgHieghtWithHover: 30%;
+    --projectImgHieghtWithHover: 225px;
     --font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --ImgFloat: left;
     --ImgMarginRight: 15%;
@@ -49,11 +49,24 @@ header h1 {
     font-style: italic;
     font-weight: bold;
     text-align: center;
+    font-size: 72px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+   
+        color: #fff;
+        text-shadow:
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 21px #fff,
+          0 0 42px rgb(161, 161, 159),
+          0 0 82px rgb(161, 161, 159),
+          0 0 92px rgb(161, 161, 159),
+          0 0 102px rgb(161, 161, 159),
+          0 0 151px rgb(161, 161, 159);
 }
 
-header h1:hover {
-    color: var(--brandcolour2);
-}
+
 
 nav {
     position: fixed;
@@ -80,12 +93,57 @@ body {
     background-color: var(--brandcolour2);
 }
 
-section {
-    display: var(--flexer);
+#backgroundimg {
+    background-image: url("../img/binarybackground.jpg")
+
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.infosec{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.row{
+    display: flex;
     flex-direction: column;
 }
 
-#profileHead {
+
+#languages {
+    margin: var(--projectmargin);
+    border: var(--projectborder);
+    display: var(--flexer);
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    
+}
+
+
+
+#Bio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: var(--projectborder);
+  
+}
+
+section {
+    display: var(--flexer);
+    /* flex-direction: column; */
+}
+ 
+
+#profilehead {
     padding-top: 0%;
     text-align: center;
 }
@@ -95,11 +153,9 @@ section {
     padding: 200px;
     display: var(--flexer);
     flex-wrap: var(--wrapper);
-}
+} 
 
-#PicBtn:hover{
-    animation: var(--boxGlow);
-}
+
 
 #RoboPic {
     margin: var(--projectmargin);
@@ -108,11 +164,26 @@ section {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    animation: var(--boxGlow);
 }
 #gBtn {
+    margin: 0%;
     display: flex;
     justify-content: center;
+    
 }
+
+ol{    font-size: 14px;
+    font-family: var(--font);
+    font-style: italic;
+}
+
+#langformating{
+    text-align: right;
+
+}
+
+
 
 
 
@@ -123,6 +194,8 @@ section {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    background-color: var(--brandcolour3);
+    box-shadow: 5px 5px 5px purple;
 }
 
 #DnD:hover {
@@ -135,22 +208,14 @@ section {
     display: var(--flexer);
     height: var(--ProjectImgHieghtWidth);
     width: var(--ProjectImgHieghtWidth);
-    padding: var(--projectImgpadding);
-    margin: var(--projectImgMargin);
-    float: var(--ImgFloat);
-    margin-right: var(--ImgMarginRight);
-    margin-bottom: 3%;
+   
 }
 
 #dice:hover {
     display: var(--flexer);
     height: var(--projectImgHieghtWithHover);
     width: var(--projectImgHieghtWithHover);
-    padding: var(--projectImgpadding);
-    margin: var(--projectImgMargin);
-    float: var(--ImgFloat);
-    margin-right: var(--ImgMarginRight);
-    margin-bottom: 20%;
+  
 }
 
 
@@ -164,21 +229,14 @@ section {
     display: var(--flexer);
     height: var(--ProjectImgHieghtWidth);
     width: var(--ProjectImgHieghtWidth);
-    padding: var(--projectImgpadding);
-    margin: var(--projectImgMargin);
-    float: var(--ImgFloat);
-    margin-right: var(--ImgMarginRight)
+   
 }
 
 #laptop:hover {
     display: var(--flexer);
     height: var(--projectImgHieghtWithHover);
     width: var(--projectImgHieghtWithHover);
-    padding: var(--projectImgpadding);
-    margin: var(--projectImgMargin);
-    float: var(--ImgFloat);
-    margin-right: var(--ImgMarginRight);
-    margin-bottom: 20%;
+  
 }
 
 #husky:hover {
@@ -191,11 +249,7 @@ section {
     display: var(--flexer);
     height: var(--ProjectImgHieghtWidth);
     width: var(--ProjectImgHieghtWidth);
-    float: var(--ImgFloat);
-    margin: var(--projectImgMargin);
-    padding: var(--projectImgpadding);
-    margin-right: var(--ImgMarginRight);
-    margin-bottom: 20%;
+  
     
 }
 
@@ -203,11 +257,6 @@ section {
     display: var(--flexer);
     height: var(--projectImgHieghtWithHover);
     width: var(--projectImgHieghtWithHover);
-    padding: var(--projectImgpadding);
-    margin: var(--projectImgMargin);
-    float: var(--ImgFloat);
-    margin-right: var(--ImgMarginRight);
-    margin-bottom: 20%;
 }
 
 footer {
