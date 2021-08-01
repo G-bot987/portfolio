@@ -187,7 +187,7 @@ ol{    font-size: 14px;
 
 
 
-#DnD, #refracting, #husky {
+#showcase1, #showcase2, #showcase3 {
     margin: var(--projectmargin);
     border: var(--projectborder);
     display: var(--flexer);
@@ -198,20 +198,20 @@ ol{    font-size: 14px;
     box-shadow: 5px 5px 5px purple;
 }
 
-#DnD:hover {
+#showcase1:hover {
     box-shadow: var(--projectshadow);
     border: var(--projectborderchange);
     animation: var(--boxGlow);
 }
 
-#dice {
+#showcaseimg {
     display: var(--flexer);
     height: var(--ProjectImgHieghtWidth);
     width: var(--ProjectImgHieghtWidth);
    
 }
 
-#dice:hover {
+#showcaseimg:hover {
     display: var(--flexer);
     height: var(--projectImgHieghtWithHover);
     width: var(--projectImgHieghtWithHover);
@@ -219,48 +219,33 @@ ol{    font-size: 14px;
 }
 
 
-#refracting:hover {
+#showcase2:hover {
     box-shadow: var(--projectshadow);
     border: var(--projectborderchange);
     animation: var(--boxGlow);
 }
 
-#laptop {
-    display: var(--flexer);
-    height: var(--ProjectImgHieghtWidth);
-    width: var(--ProjectImgHieghtWidth);
-   
-}
 
-#laptop:hover {
-    display: var(--flexer);
-    height: var(--projectImgHieghtWithHover);
-    width: var(--projectImgHieghtWithHover);
-  
-}
 
-#husky:hover {
+
+
+#showcase3:hover {
     box-shadow: var(--projectshadow);
     border: var(--projectborderchange);
     animation: var(--boxGlow);
 }
 
-#puppa {
+.langlogo{
     display: var(--flexer);
     height: var(--ProjectImgHieghtWidth);
     width: var(--ProjectImgHieghtWidth);
-  
-    
 }
 
-#puppa:hover {
-    display: var(--flexer);
-    height: var(--projectImgHieghtWithHover);
-    width: var(--projectImgHieghtWithHover);
-}
+
 
 footer {
     text-align: center;
+    background-color: var(--brandcolour2);
 }
 
 @-webkit-keyframes glow {
@@ -279,7 +264,7 @@ footer {
     nav {
         display: none;
     }
-    #husky, #DnD, #refracting{
+    #showcase1, #showcase2, #showcase3{
         flex-direction: column;
     }
 }
