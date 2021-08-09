@@ -38,6 +38,9 @@ p {
     font-style: italic;
 }
 
+#biopara{
+    font-size: 38px;
+}
 
 title {
     color: var(--brandcolour4);
