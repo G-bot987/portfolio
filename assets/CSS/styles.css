@@ -135,7 +135,9 @@ body {
 #Bio{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
     border: var(--projectborder);
   
 }
